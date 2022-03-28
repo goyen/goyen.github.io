@@ -330,38 +330,43 @@
                 </p>
             </div>
 		<br/>
-		<div id="map" class="wow fadeInUp" style="width:100%;height:350px;">
+            <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
 
-            		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=122a613fc96fa3ab9169935d07c14e3f"></script>
-			<div id="daumRoughmapContainer1648396646249" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=122a613fc96fa3ab9169935d07c14e3f"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                    mapOption = {
+                        center: new kakao.maps.LatLng(35.83106664131017, 128.77172101074146), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
 
-			<!-- 2. 설치 스크립트 -->
-			<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+                var markerPosition  = new kakao.maps.LatLng(35.83106664131017, 128.77172101074146);
 
-			<!-- 3. 실행 스크립트 -->
-			<script charset="UTF-8">
-				new daum.roughmap.Lander({
-					"timestamp" : "1648396646249",
-					"key" : "29mgy",
-					"mapWidth" : "100",
-					"mapHeight" : "100"
-				}).render();
-			</script>
-		</div>
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+            </script>
+		
+		
             <div class="wow fadeInUp section6-location p-3">
                 <div class="accordion" id="accordionExample">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="section6-location section6-location-main btn btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    지하철 이용시
+                                    셔틀버스 이용시
                                 </button>
                             </h2>
                         </div>
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                지하철 9호선 가양역 9번 출구로 나와 직진 10m도보 후 좌측건물 7층 단독홀
+                                영남대역 4번출구 버스정류장 앞 무료 셔틀버스 운행(5분 소요)
                             </div>
                         </div>
                     </div>
@@ -375,10 +380,9 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                간선 : 652, 672 <br/>
-                                지선 : 6632 <br/>
-                                공항 : 6018 <br/>
-                                광역 : 770
+                              	영남대 하차 107, 309, 399, 449, 509, 609, 649, 719,  <br/>
+					803, 840, 909, 980, 911, 압량1
+				109번 버스(영난대 승차 - 신대삼거리(감못) 하차, 도보 1분 <br/>
                             </div>
                         </div>
                     </div>
@@ -392,13 +396,8 @@
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                올림픽 대로 방면 <br/>
-                                올림픽 대로 > 강서구청 방면 진입 > 가양사거리 우회전 후 150m 전방 위치 <br/>
-                                (건너편 위치 : 150m앞 유턴 후 주차장 진입) <br/>
-                                <br/>
-                                강변북로 방면 <br/>
-                                강변북로 > 가양대로 진입 > 가양역사거리 50m 앞 가양역 8번출구 앞에서 우회전 >
-                                화곡로 69길 500m 사거리 우회전 > 50m앞 가양 3,5단지 사거리 우회전 > 150m 앞 주차장 진입 <br/>
+                                경산 IC 경산 방향 10분 소요
+        
                             </div>
                         </div>
                     </div>
@@ -408,7 +407,7 @@
             <br/><br/>
         </div>
         <footer class="pt-5 text-muted text-center text-small section8">
-            <p class="mb-1">© 2020-11-28 Myungwoon, Jeaeun</p>
+            <p class="mb-1">© 2022-03-28 Oh-Lee</p>
             <br/><br/>
             <br/><br/>
         </footer>
