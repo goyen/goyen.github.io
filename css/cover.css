@@ -33,7 +33,7 @@ a:hover {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: .00rem solid #fff;
+  border: .05rem solid #fff;
 }
 
 .top-title {
@@ -223,7 +223,7 @@ header {
   width:100%;
   height:100%;
   content: "";
-  background-image: url("../img/section2.jpg");
+  //background-image: url("../img/section2.jpg");
   background-size: cover;
   background-position: right;
   opacity: 0.6;
