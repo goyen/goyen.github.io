@@ -148,7 +148,7 @@ body {
 
 .cover-heading {
   margin-top: 7.5rem;
-  color: #fefefe;
+  color: #80b119;
   font-family: NanumMyeongjo-b;
 }
 
@@ -232,6 +232,10 @@ header {
   left: 0;
   z-index: -1;
 }
+.section2 {
+  background-color: #f3f3f3;
+}
+
 
 .section2-sub {
   font-family: NanumMyeongjo-b;
@@ -421,7 +425,7 @@ header {
 .section7-button {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
-  background-color: #CC9999;
+  background-color: #bbcb57;
   color: #fff;
   border: 0;
   border-radius: 50px;
@@ -431,7 +435,7 @@ header {
 }
 
 .section7-button:hover {
-  background-color: #CC9999;
+  background-color: #bbcb57;
   color: #fff;
   border: 0;
 }
