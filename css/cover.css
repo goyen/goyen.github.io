@@ -106,6 +106,10 @@ body {
 .cover-container {
   max-width: 42em;
 }
+.cover-container-1 {
+  max-width: 42em;
+  background-color: #f3f3f3f3;
+}
 
 .cover-container-2 {
   max-width: 42em;
