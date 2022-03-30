@@ -426,6 +426,8 @@ header {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
   background-color: #bbcb57;
+  width: 60%;
+  align-self: center;
   color: #fff;
   border: 0;
   border-radius: 50px;
