@@ -109,6 +109,7 @@ body {
 .cover-container-1 {
   max-width: 42em;
   background-color: #f3f3f3f3;
+  margin-bottom: 0em;
 }
 
 .cover-container-2 {
