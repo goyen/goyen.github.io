@@ -477,6 +477,9 @@ header {
   font-weight: 700;
 }
 
+.half_HL {
+  background: linear-gradient(to top, #FFE400 50%, transparent 50%);
+}
 
 /*
  * Footer
