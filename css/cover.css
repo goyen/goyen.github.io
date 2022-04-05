@@ -198,7 +198,10 @@ header {
   font-family: NanumMyeongjo-b;
   line-height: 2.1em;
   text-align: left;
-  margin-left: 2.5em;
+  margin-left: 1.1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .section1-sub2 {
