@@ -153,7 +153,7 @@ body {
 
 .cover-heading {
   margin-top: 7.5rem;
-  color: #80b119;
+  color: #d0df6d;
   font-family: NanumMyeongjo-b;
 }
 
@@ -481,7 +481,7 @@ header {
 }
 
 .half_HL {
-  background: linear-gradient(to top, #bbcb57 50%, transparent 50%);
+  background: linear-gradient(to top, #e4f382 50%, transparent 50%);
 }
 
 /*
